@@ -1,15 +1,23 @@
 import gsap, { TimelineMax, CSSPlugin } from "gsap";
 import {
+  BufferAttribute,
+  BufferGeometry,
+  DirectionalLight,
+  FlatShading,
   Mesh,
   MeshStandardMaterial,
   PerspectiveCamera,
   PointLight,
+  PointLightHelper,
+  Points,
+  PointsMaterial,
   Scene,
   SphereGeometry,
+  TextureLoader,
   WebGLRenderer,
 } from "three";
-import * as THREE from "three";
-import { GUI } from "dat.gui";
+
+// import { GUI } from "dat.gui";
 import star from "./texture/star.png";
 //render canvas to dom
 const renderer = new WebGLRenderer();
@@ -25,7 +33,7 @@ window.onresize = (ev) => {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 };
-const light = new THREE.DirectionalLight(0xffdddd, 1);
+const light = new DirectionalLight(0xffdddd, 1);
 light.position.set(-1000, 3830.8, -7441.6);
 scene.add(light);
 
@@ -37,7 +45,7 @@ scene.add(pointLight);
 
 const geometry = new SphereGeometry(0.5, 60, 60);
 const material = new MeshStandardMaterial({
-  flatShading: THREE.FlatShading,
+  flatShading: FlatShading,
   color: 0x0095dd,
 });
 material.roughness = 0.2;
@@ -51,7 +59,7 @@ let started = false;
 // gui.add(mouseLight.position, "y", -10, 10);
 // gui.add(mouseLight.position, "z", -10, 10);
 
-const pointLightHelper = new THREE.PointLightHelper(mouseLight);
+const pointLightHelper = new PointLightHelper(mouseLight);
 // scene.add(pointLightHelper);
 const { array } = sphere.geometry.attributes.position;
 for (let i = 0; i < array.length; i++) {
@@ -66,7 +74,7 @@ for (let i = 0; i < array.length; i++) {
   }
 }
 
-const starGeo = new THREE.BufferGeometry();
+const starGeo = new BufferGeometry();
 const vertices = [];
 
 for (let i = 0; i < 6000; i++) {
@@ -75,18 +83,18 @@ for (let i = 0; i < 6000; i++) {
 
 starGeo.setAttribute(
   "position",
-  new THREE.BufferAttribute(new Float32Array(vertices), 3)
+  new BufferAttribute(new Float32Array(vertices), 3)
 );
 
-const sprite = new THREE.TextureLoader().load(star);
-const starMaterial = new THREE.PointsMaterial({
+const sprite = new TextureLoader().load(star);
+const starMaterial = new PointsMaterial({
   color: 0xffffff,
   size: 0.0,
   map: sprite,
   opacity: 0,
 });
 
-const stars = new THREE.Points(starGeo, starMaterial);
+const stars = new Points(starGeo, starMaterial);
 
 scene.add(stars);
 const animate = function () {
