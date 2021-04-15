@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,600;1,700;1,800&family=Noto+Serif:wght@700&display=swap");
+
+body {
+  top: 0;
+  left: 0;
+  /* cursor: none; */
+  overflow-x: hidden;
+}
+#cursor {
+  backdrop-filter: invert(70%);
+  z-index: 10000;
+  opacity: 0;
+}
+a:hover,
+button:hover,
+a,
+button {
+  cursor: none;
+}
+#webGL {
+  perspective: 1000px;
+}
+#webGL > canvas {
+  transform: translateZ("-1.5");
+}
+
+.pulse {
+  animation: pulse 1.5s infinite;
+}
+.animate-clipath {
+  transition: clip-path 1.5s;
+}
+.hero-text {
+  opacity: 0;
+  transform: translateY(30%);
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #ffffffb3;
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}

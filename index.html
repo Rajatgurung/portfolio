@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class=" font-montserrat  text-gray-100 bg-black">
+  <div id="loder" class=" z-50 h-screen w-screen flex justify-center items-center fixed bg-gray-900">
+    <p class=" text-gray-200 text-3xl">Loading</p>
+  </div>
+  <div id="cursor" class="  h-8 w-8 fixed  z-50 rounded-full pointer-events-none"></div>
+  <header class=" absolute z-50 w-full">
+    <nav class=" flex justify-between items-center px-4   container mx-auto py-8 text-gray-100">
+      <h3 class=" font-noto text-2xl font-bold ">
+        Rajat </h3>
+      <div class=" flex gap-x-6 justify-end text-md ">
+        <a href="#">Contact</a>
+        <a href="#">My Work</a>
+      </div>
+
+    </nav>
+  </header>
+
+  <section id="hero" class="bg-gray-900">
+    <div class=" relative">
+
+      <div class="relative container mx-auto z-10 flex flex-col h-screen justify-center text-center items-center">
+        <div id="hero-text" class="opacity-0 transform translate-y-6">
+          <p class=" text-gray-500 text-2xl ">Hello!</p>
+          <h2 class=" text-gray-100 text-7xl font-bold leading-snug mb-4 ">
+            I'm Rajat Gurung
+          </h2>
+          <p class=" text-gray-400 text-3xl ">
+            Full Stack Web Developer (PHP / Node)
+          </p>
+        </div>
+
+        <a href="#" id="calltoaction"
+          class=" opacity-0 px-4 py-2 rounded-sm mt-8 border-green-600 border text-gray-200 text-lg ">My
+          Works</a>
+      </div>
+      <div class="absolute  top-0 webGL " style="max-width: 100vw;">
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class=" relative container px-4 py-28 mx-auto  flex w-full">
+
+    <div style="z-index: -1;" class=" absolute right-0 rotate-1">
+      <svg class=" w-60 h-60  text-gray-800" version="1.1" id="Capa_1" viewBox="0 0 276.167 276.167">
+        <g>
+          <path fill="currentColor" d="M33.144,2.471C15.336,2.471,0.85,16.958,0.85,34.765s14.48,32.293,32.294,32.293s32.294-14.486,32.294-32.293
+			S50.951,2.471,33.144,2.471z" />
+          <path fill="currentColor" d="M137.663,2.471c-17.807,0-32.294,14.487-32.294,32.294s14.487,32.293,32.294,32.293c17.808,0,32.297-14.486,32.297-32.293
+			S155.477,2.471,137.663,2.471z" />
+          <path fill="currentColor" d="M243.873,67.059c17.804,0,32.294-14.486,32.294-32.293S261.689,2.471,243.873,2.471s-32.294,14.487-32.294,32.294
+			S226.068,67.059,243.873,67.059z" />
+          <path fill="currentColor" d="M32.3,170.539c17.807,0,32.297-14.483,32.297-32.293c0-17.811-14.49-32.297-32.297-32.297S0,120.436,0,138.246
+			C0,156.056,14.493,170.539,32.3,170.539z" />
+          <path fill="currentColor" d="M136.819,170.539c17.804,0,32.294-14.483,32.294-32.293c0-17.811-14.478-32.297-32.294-32.297
+			c-17.813,0-32.294,14.486-32.294,32.297C104.525,156.056,119.012,170.539,136.819,170.539z" />
+          <path fill="currentColor" d="M243.038,170.539c17.811,0,32.294-14.483,32.294-32.293c0-17.811-14.483-32.297-32.294-32.297
+			s-32.306,14.486-32.306,32.297C210.732,156.056,225.222,170.539,243.038,170.539z" />
+          <path fill="currentColor" d="M33.039,209.108c-17.807,0-32.3,14.483-32.3,32.294c0,17.804,14.493,32.293,32.3,32.293s32.293-14.482,32.293-32.293
+			S50.846,209.108,33.039,209.108z" />
+          <path fill="currentColor" d="M137.564,209.108c-17.808,0-32.3,14.483-32.3,32.294c0,17.804,14.487,32.293,32.3,32.293
+			c17.804,0,32.293-14.482,32.293-32.293S155.368,209.108,137.564,209.108z" />
+          <path fill="currentColor" d="M243.771,209.108c-17.804,0-32.294,14.483-32.294,32.294c0,17.804,14.49,32.293,32.294,32.293
+			c17.811,0,32.294-14.482,32.294-32.293S261.575,209.108,243.771,209.108z" />
+        </g>
+      </svg>
+
+    </div>
+    <div style="z-index: -1;" class=" absolute -left-40 rotate-12  transform bottom-0 rotate-1">
+      <svg class=" w-60 h-60  text-gray-800" version="1.1" id="Capa_1" viewBox="0 0 276.167 276.167">
+        <g>
+          <path fill="currentColor" d="M33.144,2.471C15.336,2.471,0.85,16.958,0.85,34.765s14.48,32.293,32.294,32.293s32.294-14.486,32.294-32.293
+			S50.951,2.471,33.144,2.471z" />
+          <path fill="currentColor" d="M137.663,2.471c-17.807,0-32.294,14.487-32.294,32.294s14.487,32.293,32.294,32.293c17.808,0,32.297-14.486,32.297-32.293
+			S155.477,2.471,137.663,2.471z" />
+          <path fill="currentColor" d="M243.873,67.059c17.804,0,32.294-14.486,32.294-32.293S261.689,2.471,243.873,2.471s-32.294,14.487-32.294,32.294
+			S226.068,67.059,243.873,67.059z" />
+          <path fill="currentColor" d="M32.3,170.539c17.807,0,32.297-14.483,32.297-32.293c0-17.811-14.49-32.297-32.297-32.297S0,120.436,0,138.246
+			C0,156.056,14.493,170.539,32.3,170.539z" />
+          <path fill="currentColor" d="M136.819,170.539c17.804,0,32.294-14.483,32.294-32.293c0-17.811-14.478-32.297-32.294-32.297
+			c-17.813,0-32.294,14.486-32.294,32.297C104.525,156.056,119.012,170.539,136.819,170.539z" />
+          <path fill="currentColor" d="M243.038,170.539c17.811,0,32.294-14.483,32.294-32.293c0-17.811-14.483-32.297-32.294-32.297
+			s-32.306,14.486-32.306,32.297C210.732,156.056,225.222,170.539,243.038,170.539z" />
+          <path fill="currentColor" d="M33.039,209.108c-17.807,0-32.3,14.483-32.3,32.294c0,17.804,14.493,32.293,32.3,32.293s32.293-14.482,32.293-32.293
+			S50.846,209.108,33.039,209.108z" />
+          <path fill="currentColor" d="M137.564,209.108c-17.808,0-32.3,14.483-32.3,32.294c0,17.804,14.487,32.293,32.3,32.293
+			c17.804,0,32.293-14.482,32.293-32.293S155.368,209.108,137.564,209.108z" />
+          <path fill="currentColor" d="M243.771,209.108c-17.804,0-32.294,14.483-32.294,32.294c0,17.804,14.49,32.293,32.294,32.293
+			c17.811,0,32.294-14.482,32.294-32.293S261.575,209.108,243.771,209.108z" />
+        </g>
+      </svg>
+
+    </div>
+
+
+    <div class="w-1/4 z-10">
+      <p class=" font-bold text-8xl text-red-400 mb-7">3+</p>
+      <p class=" text-3xl text-red-100 font-bold">Year Experence working</p>
+    </div>
+    <div class="flex-1 pl-2">
+      <h3 class=" text-3xl font-bold text-blue-100 mb-9">Develop Frontend and Backend, Specialized in Relational
+        Database ,
+        Api Design and
+        React.
+      </h3>
+      <div class="flex">
+        <div class=" h-60 w-56 bg-gray-800 mr-4 py-4 px-5 flex flex-col justify-end">
+          <div class=" mb-4">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+              </path>
+            </svg>
+          </div>
+
+          <p class=" text-lg font-bold">Front End Development</p>
+        </div>
+        <div class=" h-60 w-56 bg-gray-800 mr-4 py-4 px-5 flex flex-col justify-end">
+          <div class=" mb-4">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01">
+              </path>
+            </svg>
+          </div>
+
+          <p class=" text-lg font-bold">Back End Development</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- sill section -->
+
+  <section class=" mb-56 h-screen flex items-center px-4">
+    <div class="container mx-auto relative">
+      <h3 class="absolute  -top-11 right-3 text-xxl font-bold text-opacity-25 text-gray-500">Siklls</h3>
+      <div class="relative top-32 w-2/3 border border-gray-900 px-10 py-12 rounded-md   flex">
+        <div class="flex-1">
+          <div class="flex items-center justify-between  mb-4">
+            <p class=" font-bold text-lg text-gray-500">Html </p>
+            <div class=" relative bg-gray-900 w-1/2 h-2">
+              <span style="width:95%" class=" absolute h-2 bg-red-400"></span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between  mb-4">
+            <p class=" font-bold text-lg text-gray-500">Css </p>
+            <div class=" relative bg-gray-900 w-1/2 h-2">
+              <span style="width:85%" class=" absolute h-2 bg-red-400"></span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between  mb-4">
+            <p class=" font-bold text-lg text-gray-500">Js </p>
+            <div class=" relative bg-gray-900 w-1/2 h-2">
+              <span style="width:90%" class=" absolute h-2 bg-red-400"></span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between  mb-4">
+            <p class=" font-bold text-lg text-gray-500">React </p>
+            <div class=" relative bg-gray-900 w-1/2 h-2">
+              <span style="width:70%" class=" absolute h-2 bg-red-400"></span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between ">
+            <p class=" font-bold text-lg text-gray-500">Vue </p>
+            <div class=" relative bg-gray-900 w-1/2 h-2">
+              <span style="width:75%" class=" absolute h-2 bg-red-400"></span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class=" w-1 opacity-5 rounded-md mx-8  bg-red-50"></div>
+
+
+        <div class=" flex-1">
+          <div class="flex items-center justify-between  mb-4">
+            <p class=" font-bold text-lg text-gray-500">Node </p>
+            <div class=" relative bg-gray-900 w-1/2 h-2">
+              <span style="width:85%" class=" absolute h-2 bg-red-400"></span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between  mb-4">
+            <p class=" font-bold text-lg text-gray-500">PHP </p>
+            <div class=" relative bg-gray-900 w-1/2 h-2">
+              <span style="width:90%" class=" absolute h-2 bg-red-400"></span>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between  mb-4">
+            <p class=" font-bold text-lg text-gray-500">Laravel </p>
+            <div class=" relative bg-gray-900 w-1/2 h-2">
+              <span style="width:70%" class=" absolute h-2 bg-red-400"></span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between  mb-4">
+            <p class=" font-bold text-lg text-gray-500">EXPRESS </p>
+            <div class=" relative bg-gray-900 w-1/2 h-2">
+              <span style="width:60%" class=" absolute h-2 bg-red-400"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About me section -->
+  <section class=" my-40 relative mt-40 mb-60">
+
+    <div class=" container mx-auto flex px-4">
+      <div class=" mr-10 relative w-1/2">
+        <img class=" object-cover rounded-sm" src="./images/aboutme.jpg" alt="">
+        <div class=" absolute w-full h-full top-0 z-10 bg-gradient-to-tr from-red-700 to-red-100 opacity-5"></div>
+        <div style="clip-path: polygon(0 91%, 100% 36%, 100% 100%, 0% 100%);"
+          class=" absolute w-full h-1/3 bottom-0 z-10 bg-red-600 opacity-50"></div>
+
+      </div>
+      <div class="px-9">
+        <!-- <p class=" text-md text-gray-500 ">Who is Rajat Gurung</p> -->
+        <h3 class=" text-3xl font-bold my-4 flex items-center ">
+          <svg class="w-7 h-7 mr-4 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>A Bit About Me
+        </h3>
+        <p class=" text-gray-400 mb-4 text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus
+          minus,
+          nesciunt
+          nobis quidem odio
+          dolorum?</p>
+        <p class=" text-gray-400 text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus minus,
+          nesciunt
+          nobis quidem odio
+          dolorum?</p>
+      </div>
+    </div>
+    <div style="z-index: -1;" class=" absolute right-5  top-0 transform  ">
+      <svg class=" w-52 max-h-52  text-gray-800" version="1.1" id="Capa_1" viewBox="0 0 276.167 276.167">
+        <g>
+          <path fill="currentColor" d="M33.144,2.471C15.336,2.471,0.85,16.958,0.85,34.765s14.48,32.293,32.294,32.293s32.294-14.486,32.294-32.293
+    S50.951,2.471,33.144,2.471z" />
+          <path fill="currentColor" d="M137.663,2.471c-17.807,0-32.294,14.487-32.294,32.294s14.487,32.293,32.294,32.293c17.808,0,32.297-14.486,32.297-32.293
+    S155.477,2.471,137.663,2.471z" />
+          <path fill="currentColor" d="M243.873,67.059c17.804,0,32.294-14.486,32.294-32.293S261.689,2.471,243.873,2.471s-32.294,14.487-32.294,32.294
+    S226.068,67.059,243.873,67.059z" />
+          <path fill="currentColor" d="M32.3,170.539c17.807,0,32.297-14.483,32.297-32.293c0-17.811-14.49-32.297-32.297-32.297S0,120.436,0,138.246
+    C0,156.056,14.493,170.539,32.3,170.539z" />
+          <path fill="currentColor" d="M136.819,170.539c17.804,0,32.294-14.483,32.294-32.293c0-17.811-14.478-32.297-32.294-32.297
+    c-17.813,0-32.294,14.486-32.294,32.297C104.525,156.056,119.012,170.539,136.819,170.539z" />
+          <path fill="currentColor" d="M243.038,170.539c17.811,0,32.294-14.483,32.294-32.293c0-17.811-14.483-32.297-32.294-32.297
+    s-32.306,14.486-32.306,32.297C210.732,156.056,225.222,170.539,243.038,170.539z" />
+          <path fill="currentColor" d="M33.039,209.108c-17.807,0-32.3,14.483-32.3,32.294c0,17.804,14.493,32.293,32.3,32.293s32.293-14.482,32.293-32.293
+    S50.846,209.108,33.039,209.108z" />
+          <path fill="currentColor" d="M137.564,209.108c-17.808,0-32.3,14.483-32.3,32.294c0,17.804,14.487,32.293,32.3,32.293
+    c17.804,0,32.293-14.482,32.293-32.293S155.368,209.108,137.564,209.108z" />
+          <path fill="currentColor" d="M243.771,209.108c-17.804,0-32.294,14.483-32.294,32.294c0,17.804,14.49,32.293,32.294,32.293
+    c17.811,0,32.294-14.482,32.294-32.293S261.575,209.108,243.771,209.108z" />
+        </g>
+      </svg>
+
+    </div>
+  </section>
+  <!-- portfolio section -->
+  <section class="mb-64">
+    <div class=" container mx-auto relative px-4">
+      <h3 class="   text-8xl text-center font-bold mb-40  text-gray-100 uppercase tracking-wide">port<span
+          class=" text-red-600">folio</span> </h3>
+      <div class=" mt-24 flex-col flex gap-y-36">
+        <div class=" flex gap-x-10">
+          <div class=" w-1/2 p-5 border-4 border-red-200 " style=" border-image: 
+          linear-gradient(
+            38deg, 
+            #DC2626, 
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0),
+            #DC2626
+          ) 1 ">
+            <img class=" object-cover"
+              src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"
+              alt="">
+          </div>
+          <div class=" flex-1 px-9">
+            <h3 class="text-3xl font-bold">Lorem, ipsum.</h3>
+            <div class=" my-4">
+              <span class=" text-sm py-1 px-3 bg-red-600 rounded-xl mr-1">Js</span>
+              <span class=" text-sm py-1 px-3 bg-red-600 rounded-xl">PHP</span>
+              <span class=" text-sm py-1 px-3 bg-red-600 rounded-xl">HTML</span>
+              <span class=" text-sm py-1 px-3 bg-red-600 rounded-xl">CSS</span>
+            </div>
+            <p class=" text-gray-400 text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+              consequuntur
+              aspernatur vero odio rerum
+              voluptate!</p>
+          </div>
+        </div>
+        <div class=" flex gap-x-10 flex-row-reverse">
+          <div class=" w-1/2 p-5 border-4 border-red-200 " style=" border-image: 
+          linear-gradient(
+            38deg, 
+            #DC2626, 
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0),
+            #DC2626
+          ) 1 ">
+            <img class=" object-cover"
+              src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"
+              alt="">
+          </div>
+          <div class=" flex-1 px-9 text-right">
+            <h3 class="text-3xl font-bold">Lorem, ipsum.</h3>
+            <div class=" my-4">
+              <span class=" text-sm py-1 px-3 bg-red-600 rounded-xl mr-1">Js</span>
+              <span class=" text-sm py-1 px-3 bg-red-600 rounded-xl">PHP</span>
+              <span class=" text-sm py-1 px-3 bg-red-600 rounded-xl">HTML</span>
+              <span class=" text-sm py-1 px-3 bg-red-600 rounded-xl">CSS</span>
+            </div>
+            <p class=" text-gray-400 text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
+              consequuntur
+              aspernatur vero odio rerum
+              voluptate!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- contact me section -->
+  <section class="my-40 relative">
+    <div class=" container mx-auto px-4 flex gap-x-6">
+      <div class=" py-10  flex flex-col h-full justify-between gap-y-10">
+        <div>
+          <h3 class=" text-8xl font-bold my-4 flex items-center">
+            Ping <span class=" text-red-600">Me</span>
+          </h3>
+          <p class=" text-gray-400 text-lg">
+            By Filling the Form or going to the Option below will and I will get back to you within 24 hour </p>
+        </div>
+        <div>
+          <a class="flex items-center w-2/3 mb-4 border border-transparent hover:border-red-600 px-4 py-4 rounded-lg">
+            <svg class="w-6 h-6 mr-4" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+              </path>
+            </svg>
+            <p>+91 7001378126</p>
+          </a>
+
+          <a class="flex items-center w-2/3 border border-transparent hover:border-red-600 px-4 py-4 rounded-lg">
+            <svg class="w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+              </path>
+            </svg>
+            <p>RajatGurung@ymail.com</p>
+          </a>
+
+        </div>
+        <div class="flex gap-x-7 ">
+          <a class=" relative h-16 w-16 rounded-full text-gray-500 transition hover:bg-gray-900 hover:text-gray-200">
+            <svg class="absolute  w-8 h-8 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z" />
+              <path d="m.396 7.977h4.976v16.023h-4.976z" />
+              <path
+                d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z" />
+            </svg>
+
+          </a>
+          <a class=" relative h-16 w-16 rounded-full transition hover:bg-gray-900 text-gray-500 hover:text-gray-200">
+            <svg class="absolute  w-8 h-8 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              fill="currentColor" x="0px" y="0px" viewBox="0 0 475.084 475.084">
+              <g>
+
+                <path d="M436.244,146.752c5.14-15.422,7.713-31.409,7.713-47.967c0-22.08-4.859-42.828-14.564-62.242
+               c-20.362,0-38.349,3.715-53.961,11.136c-15.604,7.423-33.4,18.938-53.379,34.545c-25.122-6.09-51.777-9.135-79.941-9.135
+               c-30.837,0-60.245,3.333-88.223,9.994c-20.364-15.99-38.351-27.74-53.959-35.26c-15.608-7.52-33.689-11.279-54.247-11.279
+               c-9.707,19.414-14.56,40.163-14.56,62.242c0,16.751,2.568,32.93,7.708,48.535C12.942,177.587,0,215.272,0,260.383
+               c0,39.595,5.898,71.092,17.701,94.507c6.283,12.367,14.465,23.312,24.554,32.832c10.085,9.514,21.601,17.228,34.545,23.13
+               c12.946,5.896,25.981,10.801,39.116,14.699c13.134,3.9,27.646,6.758,43.54,8.559c15.893,1.816,29.93,3.004,42.111,3.579
+               c12.181,0.564,25.693,0.853,40.544,0.853c17.508,0,33.396-0.432,47.678-1.283c14.277-0.855,30.594-2.953,48.964-6.276
+               c18.367-3.333,34.547-7.857,48.54-13.565c13.99-5.708,27.412-13.895,40.259-24.551c12.847-10.663,22.884-23.318,30.121-37.976
+               c11.604-23.603,17.412-55.107,17.412-94.507C475.078,215.082,462.135,177.206,436.244,146.752z M401.995,354.455
+               c-6.092,12.471-13.802,22.265-23.127,29.41c-9.329,7.139-20.938,12.847-34.831,17.135c-13.9,4.281-27.217,7.087-39.971,8.415
+               c-12.758,1.334-26.933,1.998-42.545,1.998h-47.966c-15.607,0-29.79-0.664-42.541-1.998c-12.752-1.328-26.075-4.134-39.971-8.415
+               c-13.891-4.288-25.5-9.996-34.829-17.135c-9.329-7.146-17.037-16.939-23.128-29.41c-6.09-12.471-9.136-27.076-9.136-43.824
+               c0-22.847,6.567-42.264,19.702-58.245c13.134-15.99,30.929-23.982,53.387-23.982c8.188,0,26.746,1.997,55.677,5.995
+               c13.513,2.093,28.456,3.14,44.823,3.14c16.372,0,31.313-1.044,44.824-3.14c29.317-3.999,47.869-5.995,55.678-5.995
+               c22.457,0,40.252,7.996,53.386,23.982c13.135,15.988,19.698,35.398,19.698,58.245
+               C411.125,327.382,408.079,341.995,401.995,354.455z" />
+                <path d="M166.875,265.52c-5.806-6.475-12.703-9.712-20.699-9.712c-7.998,0-14.896,3.241-20.701,9.712
+               c-5.802,6.468-9.897,13.703-12.275,21.689c-2.383,8.002-3.571,15.804-3.571,23.422c0,7.61,1.191,15.413,3.571,23.414
+               c2.375,7.991,6.468,15.222,12.275,21.689c5.808,6.475,12.703,9.713,20.701,9.713c7.996,0,14.896-3.244,20.699-9.713
+               c5.804-6.468,9.897-13.698,12.275-21.689c2.38-8.001,3.571-15.804,3.571-23.414c0-7.611-1.188-15.42-3.571-23.422
+               C176.771,279.226,172.682,271.994,166.875,265.52z" />
+                <path d="M349.601,265.52c-5.804-6.475-12.703-9.712-20.697-9.712c-7.991,0-14.894,3.241-20.701,9.712
+               c-5.804,6.468-9.896,13.703-12.271,21.689c-2.385,8.002-3.576,15.804-3.576,23.422c0,7.61,1.191,15.413,3.576,23.414
+               c2.375,7.991,6.468,15.222,12.271,21.689c5.808,6.475,12.71,9.713,20.701,9.713c7.994,0,14.894-3.244,20.697-9.713
+               c5.801-6.468,9.896-13.698,12.278-21.689c2.379-8.001,3.569-15.804,3.569-23.414c0-7.611-1.19-15.42-3.569-23.422
+               C359.498,279.226,355.402,271.994,349.601,265.52z" />
+              </g>
+
+            </svg>
+
+          </a>
+          <a class=" relative h-16 w-16 rounded-full transition hover:bg-gray-900  text-gray-500 hover:text-gray-200">
+            <svg class="absolute  w-8 h-8 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              fill="currentColor" x="0px" y="0px" viewBox="0 0 475.084 475.084">
+              <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+			c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+			c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+			c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+			c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+			c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+			C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+			C480.224,136.96,497.728,118.496,512,97.248z" />
+
+            </svg>
+
+          </a>
+
+        </div>
+      </div>
+      <div class=" w-2/3">
+        <form class="bg-gray-900 shadow-md rounded px-8 pt-6 pb-8 mb-4">
+          <div class="mb-6">
+            <label class="block text-gray-100 text-lg font-bold mb-2" for="username">
+              Your Name
+            </label>
+            <input
+              class="bg-gray-700 appearance-none border-2 border-transparent rounded w-full py-2 px-4 text-gray-200 focus:bg-gray-600 leading-tight focus:outline-none  focus:border-blue-800"
+              id="inline-full-name" type="text">
+          </div>
+          <div class="mb-6">
+            <label class="block text-gray-100 text-lg font-bold mb-2" for="username">
+              Email
+            </label>
+            <input
+              class="bg-gray-700 appearance-none border-2 border-transparent rounded w-full py-2 px-4 text-gray-200 focus:bg-gray-600 leading-tight focus:outline-none  focus:border-blue-800"
+              id="inline-full-name" type="email">
+          </div>
+          <div class="mb-6">
+            <label class="block text-gray-100 text-lg font-bold mb-2" for="username">
+              Message
+            </label>
+            <textarea
+              class="bg-gray-700 appearance-none border-2 border-transparent rounded w-full py-2 px-4 text-gray-200 focus:bg-gray-600 leading-tight focus:outline-none  focus:border-blue-800"
+              id="inline-full-name" type="email" rows="10"></textarea>
+          </div>
+
+          <div class="flex items-center justify-between">
+            <button
+              class="bg-red-600 hover:bg-red-500 transition text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="button">
+              Send
+            </button>
+
+          </div>
+        </form>
+      </div>
+    </div>
+    <div style="z-index: -1;" class=" absolute left-5  top-0 transform  ">
+      <svg class=" w-52 max-h-52  text-gray-800" version="1.1" id="Capa_1" viewBox="0 0 276.167 276.167">
+        <g>
+          <path fill="currentColor" d="M33.144,2.471C15.336,2.471,0.85,16.958,0.85,34.765s14.48,32.293,32.294,32.293s32.294-14.486,32.294-32.293
+			S50.951,2.471,33.144,2.471z" />
+          <path fill="currentColor" d="M137.663,2.471c-17.807,0-32.294,14.487-32.294,32.294s14.487,32.293,32.294,32.293c17.808,0,32.297-14.486,32.297-32.293
+			S155.477,2.471,137.663,2.471z" />
+          <path fill="currentColor" d="M243.873,67.059c17.804,0,32.294-14.486,32.294-32.293S261.689,2.471,243.873,2.471s-32.294,14.487-32.294,32.294
+			S226.068,67.059,243.873,67.059z" />
+          <path fill="currentColor" d="M32.3,170.539c17.807,0,32.297-14.483,32.297-32.293c0-17.811-14.49-32.297-32.297-32.297S0,120.436,0,138.246
+			C0,156.056,14.493,170.539,32.3,170.539z" />
+          <path fill="currentColor" d="M136.819,170.539c17.804,0,32.294-14.483,32.294-32.293c0-17.811-14.478-32.297-32.294-32.297
+			c-17.813,0-32.294,14.486-32.294,32.297C104.525,156.056,119.012,170.539,136.819,170.539z" />
+          <path fill="currentColor" d="M243.038,170.539c17.811,0,32.294-14.483,32.294-32.293c0-17.811-14.483-32.297-32.294-32.297
+			s-32.306,14.486-32.306,32.297C210.732,156.056,225.222,170.539,243.038,170.539z" />
+          <path fill="currentColor" d="M33.039,209.108c-17.807,0-32.3,14.483-32.3,32.294c0,17.804,14.493,32.293,32.3,32.293s32.293-14.482,32.293-32.293
+			S50.846,209.108,33.039,209.108z" />
+          <path fill="currentColor" d="M137.564,209.108c-17.808,0-32.3,14.483-32.3,32.294c0,17.804,14.487,32.293,32.3,32.293
+			c17.804,0,32.293-14.482,32.293-32.293S155.368,209.108,137.564,209.108z" />
+          <path fill="currentColor" d="M243.771,209.108c-17.804,0-32.294,14.483-32.294,32.294c0,17.804,14.49,32.293,32.294,32.293
+			c17.811,0,32.294-14.482,32.294-32.293S261.575,209.108,243.771,209.108z" />
+        </g>
+      </svg>
+
+    </div>
+  </section>
+  <section class=" py-5 bg-gray-900 text-center w-full">
+    <p class="text-center text-gray-500"> &copy;2021 <span class="text-red-600">Rajat Gurung </span>All rights
+      reserved </p>
+  </section>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
