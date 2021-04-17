@@ -15,7 +15,7 @@
   <div id="loder" class=" z-50 h-screen w-screen flex justify-center items-center fixed bg-gray-900">
     <p class=" text-gray-200 text-3xl">Loading</p>
   </div>
-  <div id="cursor" class="  h-8 w-8 fixed  z-50 rounded-full pointer-events-none"></div>
+  <div id="cursor" class=" hidden lg:block  h-8 w-8 fixed  z-50 rounded-full pointer-events-none"></div>
   <header class=" absolute z-50 w-full">
     <nav class=" flex justify-between items-center px-4   container mx-auto py-8 text-gray-100">
       <h3 class=" font-noto text-2xl font-bold ">
@@ -54,7 +54,8 @@
 
 
 
-  <section class=" relative container px-4 py-28 mx-auto  flex w-full">
+  <section
+    class=" relative container px-4 py-10 md:py-28 mx-auto  flex flex-col md:flex-row gap-y-10 text-center md:text-left w-full">
 
     <div style="z-index: -1;" class=" absolute right-0 rotate-1">
       <svg class=" w-60 h-60  text-gray-800" version="1.1" id="Capa_1" viewBox="0 0 276.167 276.167">
@@ -108,17 +109,18 @@
     </div>
 
 
-    <div class="w-1/4 z-10">
+    <div class="w-full md:w-1/4  z-10 flex md:flex-row gap-x-5 text-left justify-center">
       <p class=" font-bold text-8xl text-red-400 mb-7">3+</p>
       <p class=" text-3xl text-red-100 font-bold">Year Experence working</p>
     </div>
-    <div class="flex-1 pl-2">
-      <h3 class=" text-3xl font-bold text-blue-100 mb-9">Develop Frontend and Backend, Specialized in Relational
+    <div class="flex-1 pl-2 md:ml-12">
+      <h3 class=" text-3xl font-bold text-blue-100 mb-9 md:w-3/4">Develop Frontend and Backend, Specialized in
+        Relational
         Database ,
         Api Design and
         React.
       </h3>
-      <div class="flex">
+      <div class="flex text-left">
         <div class=" h-60 w-56 bg-gray-800 mr-4 py-4 px-5 flex flex-col justify-end">
           <div class=" mb-4">
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -149,10 +151,12 @@
 
   <!-- sill section -->
 
-  <section class=" mb-56 h-screen flex items-center px-4">
+  <section class=" mt-16 md:mb-56 md:h-screen flex items-center px-4">
     <div class="container mx-auto relative">
-      <h3 class="absolute  -top-11 right-3 text-xxl font-bold text-opacity-25 text-gray-500">Siklls</h3>
-      <div class="relative top-32 w-2/3 border border-gray-900 px-10 py-12 rounded-md   flex">
+      <h3 class="absolute -top-5 md:-top-11 right-3 text-9xl md:text-xxl  font-bold text-opacity-25 text-gray-500">
+        Siklls</h3>
+      <div
+        class="relative  md:top-20 md:w-2/3 w-full gap-y-5  border border-gray-900 md:px-10 py-12 px-4 rounded-md   flex flex-col md:flex-row">
         <div class="flex-1">
           <div class="flex items-center justify-between  mb-4">
             <p class=" font-bold text-lg text-gray-500">Html </p>
@@ -187,7 +191,7 @@
         </div>
 
 
-        <div class=" w-1 opacity-5 rounded-md mx-8  bg-red-50"></div>
+        <div class=" hidden md:block w-1 opacity-5 rounded-md mx-8  bg-red-50"></div>
 
 
         <div class=" flex-1">
@@ -223,17 +227,17 @@
 
 
   <!-- About me section -->
-  <section class=" my-40 relative mt-40 mb-60">
+  <section class=" my-40 relative md:mt-40 md:mb-60">
 
-    <div class=" container mx-auto flex px-4">
-      <div class=" mr-10 relative w-1/2">
+    <div class=" container mx-auto md:flex  px-4">
+      <div class=" mr-10 relative w-full md:w-1/2 mb-5 ">
         <img class=" object-cover rounded-sm" src="./images/aboutme.jpg" alt="">
         <div class=" absolute w-full h-full top-0 z-10 bg-gradient-to-tr from-red-700 to-red-100 opacity-5"></div>
         <div style="clip-path: polygon(0 91%, 100% 36%, 100% 100%, 0% 100%);"
           class=" absolute w-full h-1/3 bottom-0 z-10 bg-red-600 opacity-50"></div>
 
       </div>
-      <div class="px-9">
+      <div class="md:px-9">
         <!-- <p class=" text-md text-gray-500 ">Who is Rajat Gurung</p> -->
         <h3 class=" text-3xl font-bold my-4 flex items-center ">
           <svg class="w-7 h-7 mr-4 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -279,13 +283,13 @@
     </div>
   </section>
   <!-- portfolio section -->
-  <section class="mb-64">
+  <section class=" md:mb-64">
     <div class=" container mx-auto relative px-4">
-      <h3 class="   text-8xl text-center font-bold mb-40  text-gray-100 uppercase tracking-wide">port<span
-          class=" text-red-600">folio</span> </h3>
+      <h3 class="   md:text-8xl text-4xl text-center font-bold md:mb-40  text-gray-100 uppercase tracking-wide">
+        port<span class=" text-red-600">folio</span> </h3>
       <div class=" mt-24 flex-col flex gap-y-36">
-        <div class=" flex gap-x-10">
-          <div class=" w-1/2 p-5 border-4 border-red-200 " style=" border-image: 
+        <div class=" flex flex-col md:flex-row gap-y-10  gap-x-10">
+          <div class=" md:w-1/2 p-5 border-4 border-red-200 " style=" border-image: 
           linear-gradient(
             38deg, 
             #DC2626, 
@@ -297,7 +301,7 @@
               src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"
               alt="">
           </div>
-          <div class=" flex-1 px-9">
+          <div class=" flex-1 md:px-9">
             <h3 class="text-3xl font-bold">Lorem, ipsum.</h3>
             <div class=" my-4">
               <span class=" text-sm py-1 px-3 bg-red-600 rounded-xl mr-1">Js</span>
@@ -311,8 +315,8 @@
               voluptate!</p>
           </div>
         </div>
-        <div class=" flex gap-x-10 flex-row-reverse">
-          <div class=" w-1/2 p-5 border-4 border-red-200 " style=" border-image: 
+        <div class=" flex flex-col md:flex-row gap-y-10  gap-x-10">
+          <div class=" md:w-1/2 p-5 border-4 border-red-200 " style=" border-image: 
           linear-gradient(
             38deg, 
             #DC2626, 
@@ -324,7 +328,7 @@
               src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"
               alt="">
           </div>
-          <div class=" flex-1 px-9 text-right">
+          <div class=" flex-1 md:px-9">
             <h3 class="text-3xl font-bold">Lorem, ipsum.</h3>
             <div class=" my-4">
               <span class=" text-sm py-1 px-3 bg-red-600 rounded-xl mr-1">Js</span>
@@ -338,6 +342,7 @@
               voluptate!</p>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -346,10 +351,10 @@
 
   <!-- contact me section -->
   <section class="my-40 relative">
-    <div class=" container mx-auto px-4 flex gap-x-6">
+    <div class=" container mx-auto px-4 flex flex-col md:flex-row gap-x-6">
       <div class=" py-10  flex flex-col h-full justify-between gap-y-10">
         <div>
-          <h3 class=" text-8xl font-bold my-4 flex items-center">
+          <h3 class=" text-4xl md:text-8xl font-bold my-4 flex items-center">
             Ping <span class=" text-red-600">Me</span>
           </h3>
           <p class=" text-gray-400 text-lg">
@@ -441,7 +446,7 @@
 
         </div>
       </div>
-      <div class=" w-2/3">
+      <div class="  md:w-2/3">
         <form class="bg-gray-900 shadow-md rounded px-8 pt-6 pb-8 mb-4">
           <div class="mb-6">
             <label class="block text-gray-100 text-lg font-bold mb-2" for="username">

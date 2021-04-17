@@ -21,7 +21,7 @@ import {
 import star from "./texture/star.png";
 //render canvas to dom
 const renderer = new WebGLRenderer();
-renderer.setSize(innerWidth, innerHeight);
+renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(devicePixelRatio);
 document.querySelector(".webGL").appendChild(renderer.domElement);
 
