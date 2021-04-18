@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Hope wellness",
+        "stack": ["figma","html","css","js"],
+        "image":"/images/projects/home.png",
+        "discription": "Designing the UX was quite hard. Photos are imported from unplash"
+        },
+    {
+        "title": "Powder Coating",
+        "stack": ["php","react","mysql","ajax","WS","UPS API"],
+        "image":"/images/projects/powder_coating.png",
+        "discription": "CRM for Powder coating agency. With the help of this crm they was able to track sales and communicate with client . Beside that client were able to assign new project and track the status of project and Shippment of project"
+    }
+]
