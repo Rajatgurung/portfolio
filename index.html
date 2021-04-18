@@ -394,14 +394,15 @@
         </div>
       </div>
       <div class="  md:w-2/3">
-        <form class="bg-gray-900 shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <form data-netlify="true" name="contact" method="POST"
+          class="bg-gray-900 shadow-md rounded px-8 pt-6 pb-8 mb-4">
           <div class="mb-6">
             <label class="block text-gray-100 text-lg font-bold mb-2" for="username">
               Your Name
             </label>
             <input
               class="bg-gray-700 appearance-none border-2 border-transparent rounded w-full py-2 px-4 text-gray-200 focus:bg-gray-600 leading-tight focus:outline-none  focus:border-blue-800"
-              id="inline-full-name" type="text">
+              id="inline-full-name" type="text" required>
           </div>
           <div class="mb-6">
             <label class="block text-gray-100 text-lg font-bold mb-2" for="username">
@@ -409,7 +410,7 @@
             </label>
             <input
               class="bg-gray-700 appearance-none border-2 border-transparent rounded w-full py-2 px-4 text-gray-200 focus:bg-gray-600 leading-tight focus:outline-none  focus:border-blue-800"
-              id="inline-full-name" type="email">
+              id="inline-full-name" type="email" required>
           </div>
           <div class="mb-6">
             <label class="block text-gray-100 text-lg font-bold mb-2" for="username">
@@ -417,13 +418,13 @@
             </label>
             <textarea
               class="bg-gray-700 appearance-none border-2 border-transparent rounded w-full py-2 px-4 text-gray-200 focus:bg-gray-600 leading-tight focus:outline-none  focus:border-blue-800"
-              id="inline-full-name" type="email" rows="10"></textarea>
+              id="inline-full-name" type="email" rows="10" required></textarea>
           </div>
 
           <div class="flex items-center justify-between">
             <button
               class="bg-red-600 hover:bg-red-500 transition text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-              type="button">
+              type="submit">
               Send
             </button>
 
