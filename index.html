@@ -395,8 +395,9 @@
         </div>
       </div>
       <div class="  md:w-2/3">
-        <form data-netlify="true" name="contact" method="POST"
+        <form data-netlify="true" netlify-honeypot="bot-field" name="contact" method="POST"
           class="bg-gray-900 shadow-md rounded px-8 pt-6 pb-8 mb-4">
+          <div style="display: none;"> <input name="bot-field" /></div>
           <div class="mb-6">
             <label class="block text-gray-100 text-lg font-bold mb-2" for="username">
               Your Name
